@@ -4,8 +4,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Facility from './components/Facility';
 import MenuList from './components/MenuList';
-import ProductList from './components/ProductList';
 import './index.css';
+import Reviews from './components/Reviews';
 
 const App = () => {
   return (
@@ -14,8 +14,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/menuList" element={<MenuList />} />
-        <Route path="/productList" element={<ProductList />} />
         <Route path="/facility" element={<Facility />} />
+        <Route path="/reviews" element={<Reviews />} />
       </Routes>
     </>
   );

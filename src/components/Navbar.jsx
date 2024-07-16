@@ -8,14 +8,13 @@ const Navbar = () => {
     return (
         <div className='pb-4 lg:mb-35 shadow-sm'>
             <div className='flex flex-wrap'>
-                <div className='w-full flex items-center justify-between fixed bg-white'>
-                    <div className='w-16 h-16'>
+                <div className='w-full p-2 flex items-center justify-between fixed bg-white'>
+                    <div className='w-16 h-16 ml-16'>
                         <img src={Logo} alt="Grineks-Logo" />
                     </div>
                     <div className='flex items-center justify-center gap-10 text-sm font-bold text-yellow-800 pl-28'>
                         <Link to="/about">ABOUT</Link>
                         <Link to="/menuList">MENU</Link>
-                        <Link to="/productList">PRODUCTS</Link>
                         <Link to="/facility">FACILITY</Link>
                         <Link to="/reviews">REVIEWS</Link>
                     </div>
