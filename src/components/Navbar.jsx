@@ -15,6 +15,7 @@ const Navbar = () => {
                     <div className='flex items-center justify-center gap-10 text-sm font-bold text-yellow-800 pl-28'>
                         <Link to="/about">ABOUT</Link>
                         <Link to="/menuList">MENU</Link>
+                        <Link to="/productList">PRODUCT</Link>
                         <Link to="/facility">FACILITY</Link>
                         <Link to="/reviews">REVIEWS</Link>
                     </div>
