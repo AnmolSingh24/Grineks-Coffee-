@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <div className='pb-4 lg:mb-35'>
             <div className='flex flex-wrap'>
-                <div className='w-full flex items-center justify-center gap-10'>
+                <div className='w-full mt-4 flex items-center justify-center gap-10'>
                     <img src={HeroImg} alt="Coffee-Image" className='w-[48rem] h-[35rem] mt-28' />
                     <div className='w-[40rem] pr-10'>
                         <h1 className='font-normal text-7xl text-yellow-900 mb-8'>Enjoy Your Morning Coffee</h1>
