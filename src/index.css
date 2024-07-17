@@ -7,3 +7,16 @@
 :root{
     font-family: "Roboto Slab", sans-serif;
 }
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: rgb(241, 227, 135);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: rgb(68, 59, 0);
+    border-radius: 20rem;
+}
