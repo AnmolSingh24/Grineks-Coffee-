@@ -47,7 +47,17 @@ import maragogypeImage from "../assets/maragogype.jpg";
 import MochaImage from "../assets/mocha.jpg";
 import mundoImage from "../assets/mundo.webp";
 
-export const HEROCONTENT = "Boost your productivity and build your mood with a glass of coffee in the morning, 100% natural from garden. Our coffee beans are carefully selected and roasted to perfection, ensuring a delightful and rich flavor in every sip. Join us and start your day with the perfect cup of coffee, made with love and passion."
+export const HEROCONTENT = [
+    {
+        title: "Enjoy your Morning Coffee"
+    },
+    {
+        subTitle: "Coffee पे चर्चा"
+    },
+    {
+        description: "Boost your productivity and build your mood with a glass of coffee in the morning, 100% natural from garden. Our coffee beans are carefully selected and roasted to perfection, ensuring a delightful and rich flavor in every sip. Join us and start your day with the perfect cup of coffee, made with love and passion."
+    }
+];
 
 export const MENU = [
     {

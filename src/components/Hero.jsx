@@ -10,9 +10,13 @@ const Hero = () => {
                 <div className='w-full mt-4 flex items-center justify-center gap-10'>
                     <img src={HeroImg} alt="Coffee-Image" className='w-[48rem] h-[35rem] mt-28' />
                     <div className='w-[40rem] pr-10'>
-                        <h1 className='font-normal text-7xl text-yellow-900 mb-8'>Enjoy Your Morning Coffee</h1>
-                        <h3 className='font-normal text-4xl text-yellow-900'>"Coffee पे चर्चा"</h3>
-                        <p className='text-yellow-900 py-6'>{HEROCONTENT}</p>
+                        {HEROCONTENT.map((content, index) => (
+                            <div key={index}>
+                                <h1 className='font-normal text-7xl text-yellow-900'>{content.title}</h1>
+                                {content.subTitle && <h3 className='font-normal text-4xl text-yellow-900'>" {content.subTitle} "</h3>}
+                                <p className='text-yellow-900 pb-6'>{content.description}</p>
+                            </div>
+                        ))}
                         <div className='w-40 flex items-center justify-center gap-4 bg-yellow-900 p-3 rounded-full text-white'>Order Now
                             <button>
                                 <FiArrowRightCircle className='w-6 h-6' />
