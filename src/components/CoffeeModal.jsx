@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CoffeeModal = ({ isOpen, onClose, coffee }) => {
     if (!isOpen) return null;
 
@@ -20,7 +18,7 @@ const CoffeeModal = ({ isOpen, onClose, coffee }) => {
                     ))}
                 </div>
                 <div className="flex justify-center">
-                    <button onClick={onClose} className="bg-yellow-900 hover:bg-yellow-800 px-6 py-2 rounded-full text-white">
+                    <button onClick={onClose} className="bg-red-900 hover:bg-red-700 px-6 py-2 rounded-full text-white">
                         Close
                     </button>
                 </div>
