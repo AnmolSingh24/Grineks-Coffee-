@@ -4,7 +4,7 @@ import { FiArrowRightCircle } from "react-icons/fi";
 
 const Hero = () => {
     return (
-        <div className='pb-4 lg:mb-35'>
+        <div className='pb-4'>
             <div className='flex flex-wrap'>
                 <div className='w-full mt-4 flex items-center justify-center gap-10'>
                     <img src={HeroImg} alt="Coffee-Image" className='w-[48rem] h-[35rem] mt-28' />
