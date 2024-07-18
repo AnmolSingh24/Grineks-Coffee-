@@ -41,7 +41,7 @@ const ProductList = () => {
         <div className='flex items-center justify-center min-h-screen'>
             <div className='my-12'>
                 <div>
-                    <h1 className='text-center font-bold text-4xl text-yellow-900'>Our Product</h1>
+                    <h1 className='text-center font-bold text-4xl text-yellow-900'>Our Products</h1>
                 </div>
                 <div className='mt-10 w-[64rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                     {productItems.map((item, index) => (
