@@ -1,4 +1,4 @@
-import { menuItems } from '../constants';
+import { menuItems } from '../constants/data.js';
 
 const MenuList = () => {
 

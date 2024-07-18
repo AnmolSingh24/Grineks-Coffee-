@@ -1,41 +1,6 @@
-import arabicaImage from "../../assets/arabica.jpg";
-import robustaImage from "../../assets/robusta.jpg";
-import libericaImage from "../../assets/liberica.jpg";
-import excelsaImage from "../../assets/excelsa.jpg";
-import typicaImage from "../../assets/typica.jpg";
-import geishaImage from "../../assets/geisha.webp"
-import bourbonImage from "../../assets/bourbon.jpg";
-import catimorImage from "../../assets/catimor.jpg";
-import caturraImage from "../../assets/caturra.jpg";
-import hararImage from "../../assets/harar.jpg";
-import icatuImage from "../../assets/icatu.webp";
-import jacksonImage from "../../assets/jackson.jpeg";
-import jamaicanImage from "../../assets/jamaican.jpg";
-import javaImage from "../../assets/java.webp";
-import maragogypeImage from "../../assets/maragogype.jpg";
-import mochaImage from "../../assets/mocha.jpg";
-import mundoImage from "../../assets/mundo.webp";
+import { productItems } from "../../constants/data.js"
 
 const ProductList = () => {
-      const productItems = [
-    { name: 'Arabica', image: arabicaImage, price: '$3.00' },
-    { name: 'Robusta', image: robustaImage, price: '$4.50' },
-    { name: 'Liberica', image: libericaImage, price: '$4.00' },
-    { name: 'Excelsa', image: excelsaImage, price: '$3.50' },
-    { name: 'Typica', image: typicaImage, price: '$4.75' },
-    { name: 'Geisha/Gesha', image: geishaImage, price: '$4.75' },
-    { name: 'Bourbon', image: bourbonImage, price: '$4.75' },
-    { name: 'Catimor', image: catimorImage, price: '$4.75' },
-    { name: 'Caturra', image: caturraImage, price: '$4.75' },
-    { name: 'Harar', image: hararImage, price: '$4.75' },
-    { name: 'Icatu', image: icatuImage, price: '$4.75' },
-    { name: 'Jackson', image: jacksonImage, price: '$4.75' },
-    { name: 'Jamaican', image: jamaicanImage, price: '$4.75' },
-    { name: 'Java', image: javaImage, price: '$4.75' },
-    { name: 'Maragogype', image: maragogypeImage, price: '$4.75' },
-    { name: 'Mocha', image: mochaImage, price: '$4.75' },
-    { name: 'Mundo', image: mundoImage, price: '$4.75' },
-  ];
 
     return (
         <div className='flex items-center justify-center min-h-screen'>

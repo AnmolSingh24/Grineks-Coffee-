@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroImg from "../assets/HeroCoffeeImg.png"
 import { FiArrowRightCircle } from "react-icons/fi";
-import { HEROCONTENT } from '../constants';
+import { HEROCONTENT } from '../constants/data.js';
 
 const Hero = () => {
     return (

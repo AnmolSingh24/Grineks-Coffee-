@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiArrowRightCircle } from 'react-icons/fi';
 import CoffeeModal from './CoffeeModal';
-import { MENU } from '../constants';
+import { MENU } from '../constants/data.js';
 
 const Menu = () => {
     const [selectedCoffee, setSelectedCoffee] = useState(null);

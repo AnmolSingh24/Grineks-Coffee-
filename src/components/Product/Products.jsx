@@ -2,45 +2,11 @@ import { FiArrowRightCircle } from 'react-icons/fi';
 import { Link } from "react-router-dom";
 import CoffeeProducts from "./CoffeeProducts";
 import { useState } from "react";
-import arabicaImage from "../../assets/arabica.jpg";
-import geishaImage from "../../assets/geisha.webp";
-import libericaImage from "../../assets/liberica.jpg";
-import excelsaImage from "../../assets/excelsa.jpg";
+import { PRODUCTITEMS } from '../../constants/data.js';
 
 const Products = () => {
     const [selectedCoffee, setSelectedCoffee] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
-
-    const productItems = [
-        {
-            id: 1,
-            name: 'Arabica',
-            description: 'Smooth and sweet with hints of fruit and sugar',
-            price: '$2.99',
-            image: arabicaImage,
-        },
-        {
-            id: 2,
-            name: 'Geisha',
-            description: 'Floral, jasmine-like aroma with a smooth taste',
-            price: '$3.49',
-            image: geishaImage,
-        },
-        {
-            id: 3,
-            name: 'Liberica',
-            description: 'Unique, smoky flavor with a floral aroma',
-            price: '$3.79',
-            image: libericaImage,
-        },
-        {
-            id: 4,
-            name: 'Excelsa',
-            description: 'Tart and fruity with a complex flavor profile',
-            price: '$3.29',
-            image: excelsaImage,
-        }
-    ];
 
     const handleVarietiesClick = (coffee) => {
         setSelectedCoffee(coffee);
@@ -57,7 +23,7 @@ const Products = () => {
             <div className='my-8'>
                 <h1 className='text-center font-bold text-4xl text-yellow-900'>Products</h1>
                 <div className='my-10 w-[64rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
-                    {productItems.map((item, index) => (
+                    {PRODUCTITEMS.map((item, index) => (
                         <div key={index} className='bg-yellow-100 m-4 w-full p-4 rounded-lg shadow-md flex flex-col items-center'>
                             <img src={item.image} alt={item.name} className='w-52 h-40 object-cover mb-4 rounded-t-lg' />
                             <h2 className='text-2xl text-center font-semibold text-yellow-900 mb-4'>{item.name}</h2>

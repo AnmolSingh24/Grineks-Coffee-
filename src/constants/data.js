@@ -29,6 +29,23 @@ import latteImage from '../assets/Menu3.jpg';
 import americanoImage from '../assets/Menu4.jpg';
 import mochaImage from '../assets/Menu5.jpg';
 import icedImage from '../assets/Menu6.jpg';
+import arabicaImage from "../assets/arabica.jpg"
+import robustaImage from "../assets/robusta.jpg";
+import libericaImage from "../assets/liberica.jpg";
+import excelsaImage from "../assets/excelsa.jpg";
+import typicaImage from "../assets/typica.jpg";
+import geishaImage from "../assets/geisha.webp"
+import bourbonImage from "../assets/bourbon.jpg";
+import catimorImage from "../assets/catimor.jpg";
+import caturraImage from "../assets/caturra.jpg";
+import hararImage from "../assets/harar.jpg";
+import icatuImage from "../assets/icatu.webp";
+import jacksonImage from "../assets/jackson.jpeg";
+import jamaicanImage from "../assets/jamaican.jpg";
+import javaImage from "../assets/java.webp";
+import maragogypeImage from "../assets/maragogype.jpg";
+import MochaImage from "../assets/mocha.jpg";
+import mundoImage from "../assets/mundo.webp";
 
 export const HEROCONTENT = "Boost your productivity and build your mood with a glass of coffee in the morning, 100% natural from garden. Our coffee beans are carefully selected and roasted to perfection, ensuring a delightful and rich flavor in every sip. Join us and start your day with the perfect cup of coffee, made with love and passion."
 
@@ -101,3 +118,50 @@ export const menuItems = [
     { name: 'Mocha', image: mochaImage, price: '$4.75' },
     { name: 'Iced Coffees', image: icedImage, price: '$4.75' },
 ];
+
+export const PRODUCTITEMS = [
+    {
+        image: arabicaImage,
+        name: 'Arabica',
+        description: 'Smooth and sweet with hints of fruit and sugar',
+        price: '$2.99',
+    },
+    {
+        image: geishaImage,
+        name: 'Geisha',
+        description: 'Floral, jasmine-like aroma with a smooth taste',
+        price: '$3.49',
+    },
+    {
+        image: libericaImage,
+        name: 'Liberica',
+        description: 'Unique, smoky flavor with a floral aroma',
+        price: '$3.79',
+    },
+    {
+        image: excelsaImage,
+        name: 'Excelsa',
+        description: 'Tart and fruity with a complex flavor profile',
+        price: '$3.29',
+    }
+];
+
+export const productItems = [
+    { name: 'Arabica', image: arabicaImage, price: '$3.00' },
+    { name: 'Robusta', image: robustaImage, price: '$4.50' },
+    { name: 'Liberica', image: libericaImage, price: '$4.00' },
+    { name: 'Excelsa', image: excelsaImage, price: '$3.50' },
+    { name: 'Typica', image: typicaImage, price: '$4.75' },
+    { name: 'Geisha/Gesha', image: geishaImage, price: '$4.75' },
+    { name: 'Bourbon', image: bourbonImage, price: '$4.75' },
+    { name: 'Catimor', image: catimorImage, price: '$4.75' },
+    { name: 'Caturra', image: caturraImage, price: '$4.75' },
+    { name: 'Harar', image: hararImage, price: '$4.75' },
+    { name: 'Icatu', image: icatuImage, price: '$4.75' },
+    { name: 'Jackson', image: jacksonImage, price: '$4.75' },
+    { name: 'Jamaican', image: jamaicanImage, price: '$4.75' },
+    { name: 'Java', image: javaImage, price: '$4.75' },
+    { name: 'Maragogype', image: maragogypeImage, price: '$4.75' },
+    { name: 'Mocha', image: MochaImage, price: '$4.75' },
+    { name: 'Mundo', image: mundoImage, price: '$4.75' },
+  ];
