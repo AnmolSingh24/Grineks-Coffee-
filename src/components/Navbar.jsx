@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from "../assets/Logo.jpg";
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
 
 const Navbar = () => {
     return (
@@ -27,6 +28,9 @@ const Navbar = () => {
                                 <MdOutlineShoppingCart className='w-5 h-5' />
                             </button>
                         </Link>
+                        <button className='flex justify-center items-center gap-4 hover:bg-yellow-800 p-3 rounded-full hover:text-white'>
+                            <FaRegHeart className='w-5 h-5' />
+                        </button>
                         <button className='text-white font-normal bg-yellow-800 py-1.5 px-6 rounded-full'>
                             <p>Sign in</p>
                         </button>
