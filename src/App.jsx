@@ -6,6 +6,7 @@ import Facility from './components/Facility';
 import MenuList from './components/MenuList';
 import ProductList from "./components/Product/ProductList";
 import './index.css';
+import Cart from './components/Cart/Cart';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/menuList" element={<MenuList />} />
         <Route path="/productList" element={<ProductList />} />
         <Route path="/facility" element={<Facility />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );

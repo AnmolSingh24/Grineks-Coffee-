@@ -22,9 +22,11 @@ const Navbar = () => {
                         <button className='p-3 hover:bg-yellow-800 hover:text-white rounded-full'>
                             <FaSearch className='w-4 h-4' />
                         </button>
-                        <button className='p-3 hover:bg-yellow-800 hover:text-white rounded-full'>
-                            <MdOutlineShoppingCart className='w-5 h-5' />
-                        </button>
+                        <Link to='Cart'>
+                            <button className='flex justify-center items-center gap-4 hover:bg-yellow-800 p-3 rounded-full hover:text-white'>
+                                <MdOutlineShoppingCart className='w-5 h-5' />
+                            </button>
+                        </Link>
                         <button className='text-white font-normal bg-yellow-800 py-1.5 px-6 rounded-full'>
                             <p>Sign in</p>
                         </button>
