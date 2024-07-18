@@ -17,7 +17,6 @@ const Navbar = () => {
                         <Link to="/menuList">MENU</Link>
                         <Link to="/productList">PRODUCT</Link>
                         <Link to="/facility">FACILITY</Link>
-                        <Link to="/reviews">REVIEWS</Link>
                     </div>
                     <div className='flex items-center justify-center gap-6'>
                         <button className='p-3 hover:bg-yellow-800 rounded-full'>

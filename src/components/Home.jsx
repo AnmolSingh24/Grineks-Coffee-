@@ -1,9 +1,9 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Hero from './Hero'
-import Menu from './Menu'
-import Footer from './Footer'
-import Products from './Product/Products'
+import Navbar from './Navbar';
+import Hero from './Hero';
+import Menu from './Menu';
+import Products from './Product/Products';
+import Reviews from "./Reviews";
+import Footer from './Footer';
 
 const Home = () => {
   return (
@@ -12,6 +12,7 @@ const Home = () => {
         <Hero />
         <Menu />
         <Products />
+        <Reviews />
         <Footer />
     </div>
   )
