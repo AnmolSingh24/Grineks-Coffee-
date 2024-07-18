@@ -1,19 +1,6 @@
-import espressoImage from '../assets/Menu1.avif';
-import cappuccinoImage from '../assets/Menu2.avif';
-import latteImage from '../assets/Menu3.jpg';
-import americanoImage from '../assets/Menu4.jpg';
-import mochaImage from '../assets/Menu5.jpg';
-import icedImage from '../assets/Menu6.jpg';
+import { menuItems } from '../constants';
 
 const MenuList = () => {
-    const menuItems = [
-        { name: 'Espresso', image: espressoImage, price: '$3.00' },
-        { name: 'Cappuccino', image: cappuccinoImage, price: '$4.50' },
-        { name: 'Latte', image: latteImage, price: '$4.00' },
-        { name: 'Americano', image: americanoImage, price: '$3.50' },
-        { name: 'Mocha', image: mochaImage, price: '$4.75' },
-        { name: 'Iced Coffees', image: icedImage, price: '$4.75' },
-    ];
 
     return (
         <div className='flex items-center justify-center min-h-screen'>
