@@ -8,6 +8,7 @@ import ProductList from "./components/Product/ProductList";
 import Cart from './components/Order/Cart';
 import PlaceOrder from './components/Order/PlaceOrder';
 import './index.css';
+import ProductOrderDetails from './components/Product/ProductOrderDetails';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/facility" element={<Facility />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/cart/placeOrder" element={<PlaceOrder />} />
+        <Route path="/ProductList/productOrderDetails" element={<ProductOrderDetails />} />
       </Routes>
     </>
   );

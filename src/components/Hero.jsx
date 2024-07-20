@@ -17,11 +17,9 @@ const Hero = () => {
                                 <p className='text-yellow-900 pb-6'>{content.description}</p>
                             </div>
                         ))}
-                        <div className='w-40 flex items-center justify-center gap-4 bg-yellow-900 p-3 rounded-full text-white'>Order Now
-                            <button>
-                                <FiArrowRightCircle className='w-6 h-6' />
-                            </button>
-                        </div>
+                        <button className='w-40 flex items-center justify-center gap-4 bg-yellow-900 p-3 rounded-full text-white'>Order Now
+                            <FiArrowRightCircle className='w-6 h-6' />
+                        </button>
                     </div>
                 </div>
             </div>
