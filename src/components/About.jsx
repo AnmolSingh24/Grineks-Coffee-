@@ -1,7 +1,10 @@
+import Navbar from "./Navbar";
+
 const About = () => {
   return (
     <>
-      <div className='flex justify-center items-center mt-6'>
+    <Navbar />
+      <div className='flex justify-center items-center mt-20'>
         <section className="w-[80rem] p-6 my-6 bg-yellow-700 py-12 rounded-lg">
           <div className="container mx-auto px-6 text-white">
             <h2 className="text-4xl font-bold text-center mb-8">About Grind Geeks</h2>

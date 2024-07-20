@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import Logo from "../assets/Logo.jpg";
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import { FaRegHeart } from "react-icons/fa";
+// import { FaRegHeart } from "react-icons/fa";
+import { HiDotsVertical } from "react-icons/hi";
 
 const Navbar = () => {
     return (
@@ -11,7 +12,8 @@ const Navbar = () => {
             <div className='flex flex-wrap'>
                 <div className='w-full p-2 flex justify-around items-center gap-20 fixed bg-white'>
                     <div className='w-16 h-16 ml-16'>
-                        <img src={Logo} alt="Grineks-Logo" />
+                        <Link to="/">
+                            <img src={Logo} alt="Grineks-Logo" /></Link>
                     </div>
                     <div className='flex items-center justify-center gap-10 text-sm font-bold text-yellow-800 pl-28'>
                         <Link to="/about">ABOUT</Link>
@@ -29,8 +31,11 @@ const Navbar = () => {
                             </button>
                         </Link>
                         <button className='flex justify-center items-center gap-4 hover:bg-yellow-800 p-3 rounded-full hover:text-white'>
-                            <FaRegHeart className='w-5 h-5' />
+                            <HiDotsVertical className='w-5 h-5' />
                         </button>
+                        {/* <button className='flex justify-center items-center gap-4 hover:bg-yellow-800 p-3 rounded-full hover:text-white'>
+                            <FaRegHeart className='w-5 h-5' />
+                        </button> */}
                         <button className='text-white font-normal bg-yellow-800 py-1.5 px-6 rounded-full'>
                             <p>Sign in</p>
                         </button>

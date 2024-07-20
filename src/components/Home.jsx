@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import Hero from './Hero';
-import Menu from './Menu';
+import Menu from '../components/Menu/Menu';
 import Products from './Product/Products';
 import Reviews from "./Reviews";
 import Footer from './Footer';

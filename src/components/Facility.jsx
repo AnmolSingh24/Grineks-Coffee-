@@ -1,9 +1,11 @@
 import React from 'react';
+import Navbar from './Navbar';
 
 const Facility = () => {
   return (
     <>
-      <div className='flex justify-center items-center mt-14'>
+      <Navbar />
+      <div className='flex justify-center items-center mt-20'>
         <section className="w-[50rem] p-6 my-6 bg-yellow-700 rounded-lg">
           <h2 className="text-3xl font-semibold mb-4 text-white">Our Facility</h2>
           <p className="text-lg leading-relaxed text-white mb-4">
