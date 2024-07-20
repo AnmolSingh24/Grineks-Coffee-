@@ -63,9 +63,28 @@ export const MENU = [
         description: 'A tantalizingly rich and bold shot of freshly brewed espresso, crowned with a swirl of smooth, creamy foam.',
         price: '$3.00',
         varieties: [
-            { image: americano, name: 'Americano', price: '$3.00' },
-            { image: redEyeEspresso, name: 'Red Eye Espresso', price: '$4.00' },
-            { image: blackEyeEspresso, name: 'Black Eye Espresso', price: '$5.00' },
+            {
+                image: americano, name: 'Americano',
+                sizes: [
+                    { size: 'S', currency: '₹', price: '251.17' },
+                    { size: 'M', currency: '₹', price: '334.89' },
+                    { size: 'L', currency: '₹', price: '418.61' }
+                ]
+            },
+            {
+                image: redEyeEspresso, name: 'Red Eye Espresso',
+                sizes: [
+                    { size: 'S', currency: '₹', price: '220.10' },
+                    { size: 'M', currency: '₹', price: '289.89' },
+                    { size: 'L', currency: '₹', price: '321.12' }
+                ]
+            },
+            { image: blackEyeEspresso, name: 'Black Eye Espresso',
+                sizes: [
+                    {size: 'S', currency: '₹', price: '251.17'},
+                    {size: 'M', currency: '₹', price: '334.89'},
+                    {size: 'L', currency: '₹', price: '418.61'}
+                ]},
             { image: ristrettoCappuccino, name: 'Ristretto Espresso', price: '$5.50' },
             { image: doppioEspresso, name: 'Doppio Espresso', price: '$6.00' }
         ]
@@ -131,25 +150,41 @@ export const PRODUCTITEMS = [
         image: arabicaImage,
         name: 'Arabica Beans',
         description: 'Smooth and sweet with hints of fruit and sugar',
-        price: '₹ 250.88',
+        prices: [
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
+        ],
     },
     {
         image: geishaImage,
         name: 'Geisha Beans',
         description: 'Floral, jasmine-like aroma with a smooth taste',
-        price: '₹ 291.85',
+        prices: [
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
+        ],
     },
     {
         image: libericaImage,
         name: 'Liberica Beans',
         description: 'Unique, smoky flavor with a floral aroma',
-        price: '₹ 316.91',
+        prices: [
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
+        ],
     },
     {
         image: excelsaImage,
         name: 'Excelsa Beans',
         description: 'Tart and fruity with a complex flavor profile',
-        price: '₹ 275.13',
+        prices: [
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
+        ],
     }
 ];
 
@@ -157,135 +192,135 @@ export const productItems = [
     {
         name: 'Arabica Beans', image: arabicaImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Arabica beans are known for their smooth, sweet flavor with hints of fruit and caramel.'
     },
     {
         name: 'Robusta Beans', image: robustaImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Robusta beans have a stronger, more bitter flavor with a nutty aftertaste, often used in espresso blends.'
     },
     {
         name: 'Liberica Beans', image: libericaImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Liberica beans have a distinctively floral and fruity aroma with a woody and smoky flavor.'
     },
     {
         name: 'Excelsa Beans', image: excelsaImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Excelsa beans are known for their tart, fruity flavor with a distinct complexity and often used in specialty coffee.'
     },
     {
         name: 'Typica Beans', image: typicaImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Typica beans have a balanced flavor profile with mild acidity and a smooth body, popular in Latin American coffees.'
     },
     {
         name: 'Geisha Beans', image: geishaImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Geisha beans are prized for their floral and tea-like flavors, with a light body and vibrant acidity.'
     },
     {
         name: 'Bourbon Beans', image: bourbonImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Catimor beans are a hybrid known for their disease resistance and bold flavor profile, with earthy and herbal notes.'
     },
     {
         name: 'Caturra Beans', image: caturraImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Caturra beans are a natural mutation of Bourbon beans, offering a bright acidity and sweetness, often found in Central American coffees.'
     },
     {
         name: 'Harar Beans', image: hararImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Harar beans are Ethiopian, known for their winey and fruity flavors, with a rich, heavy body and complex aroma.'
     },
     {
         name: 'Icatu Beans', image: icatuImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Icatu beans are Brazilian, known for their low acidity, creamy body, and sweet flavor with notes of chocolate and nuts.'
     },
     {
         name: 'Jackson Beans', image: jacksonImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Jackson beans are named after a coffee farmer in Costa Rica, offering a balanced acidity with a smooth body and rich flavor.'
     },
     {
         name: 'Jamaican Beans', image: jamaicanImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Jamaican beans, particularly Blue Mountain, are renowned for their mild flavor, bright acidity, and smooth body, often considered one of the best coffees in the world.'
     },
     {
         name: 'Java Beans', image: javaImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Java beans are Indonesian, known for their full body, rich flavor with spicy and herbal notes, and a relatively low acidity.'
     },
     {
         name: 'Mocha Beans', image: mochaImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Mocha beans are Yemeni, known for their winey, complex flavor with rich chocolatey undertones and a medium body.'
     },
     {
         name: 'Mundo Beans', image: mundoImage,
         prices: [
-            { size: '250gm', amt: '459.95', currency: '₹' },
-            { size: '500gm', amt: '878.08', currency: '₹' },
-            { size: '1Kg', amt: '1547.10', currency: '₹' },
+            { size: '250gm', currency: '₹', amt: '459.95', },
+            { size: '500gm', currency: '₹', amt: '878.08', },
+            { size: '1Kg', currency: '₹', amt: '1547.10', },
         ],
         description: 'Mundo Novo beans are Brazilian, known for their mild, balanced flavor with a medium body, often used in espresso blends.'
     }
