@@ -79,14 +79,30 @@ export const MENU = [
                     { size: 'L', currency: '₹', price: '321.12' }
                 ]
             },
-            { image: blackEyeEspresso, name: 'Black Eye Espresso',
+            {
+                image: blackEyeEspresso, name: 'Black Eye Espresso',
                 sizes: [
-                    {size: 'S', currency: '₹', price: '251.17'},
-                    {size: 'M', currency: '₹', price: '334.89'},
-                    {size: 'L', currency: '₹', price: '418.61'}
-                ]},
-            { image: ristrettoCappuccino, name: 'Ristretto Espresso', price: '$5.50' },
-            { image: doppioEspresso, name: 'Doppio Espresso', price: '$6.00' }
+                    { size: 'S', currency: '₹', price: '251.17' },
+                    { size: 'M', currency: '₹', price: '334.89' },
+                    { size: 'L', currency: '₹', price: '418.61' }
+                ]
+            },
+            {
+                image: ristrettoCappuccino, name: 'Ristretto Espresso',
+                sizes: [
+                    { size: 'S', currency: '₹', price: '251.17' },
+                    { size: 'M', currency: '₹', price: '334.89' },
+                    { size: 'L', currency: '₹', price: '418.61' }
+                ]
+            },
+            {
+                image: doppioEspresso, name: 'Doppio Espresso',
+                sizes: [
+                    { size: 'S', currency: '₹', price: '251.17' },
+                    { size: 'M', currency: '₹', price: '334.89' },
+                    { size: 'L', currency: '₹', price: '418.61' }
+                ]
+            }
         ]
     },
     {
