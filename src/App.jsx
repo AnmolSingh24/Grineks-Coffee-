@@ -8,6 +8,8 @@ import ProductList from "./pages/Product/ProductList";
 import Cart from './pages/CartItem/Cart';
 import './index.css';
 import { CartProvider } from './context/CartContext';
+import WishList from './WishList';
+import TrackOrder from './TrackOrder';
 
 const App = () => {
 
@@ -23,6 +25,8 @@ const App = () => {
           <Route path="/menuVarieties" element={<MenuVarieties />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/ProductList/ProductSummary" element={<Cart />} />
+          <Route path="/wishList" element={<WishList />} />
+          <Route path="/trackOrder" element={<TrackOrder />} />
         </Routes>
       </CartProvider>
     </>
