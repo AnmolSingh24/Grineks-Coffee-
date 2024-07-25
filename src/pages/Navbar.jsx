@@ -62,7 +62,7 @@ const Navbar = () => {
                                     <button onClick={handleCloseDropDown} className='absolute top-2 right-2 text-gray-600'>x</button>
                                     <div className='font-semibold'>
                                         <div className='mt-6 mb-2'>
-                                            <Link to="/wishlist" className='block text-yellow-800 hover:bg-yellow-200 py-2 px-4 rounded-md'>
+                                            <Link to="/wishList" className='block text-yellow-800 hover:bg-yellow-200 py-2 px-4 rounded-md'>
                                                 WishList
                                             </Link>
                                         </div>
