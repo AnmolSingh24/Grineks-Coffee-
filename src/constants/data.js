@@ -64,7 +64,7 @@ export const MENU = [
         price: '$3.00',
         varieties: [
             {
-                image: americano, name: 'Americano',
+                image: americano, name: 'Americano Espresso',
                 sizes: [
                     { size: 'S', currency: '₹', price: '251.17' },
                     { size: 'M', currency: '₹', price: '334.89' },
