@@ -10,6 +10,7 @@ import './index.css';
 import { CartProvider } from './context/CartContext';
 import WishList from './WishList';
 import TrackOrder from './TrackOrder';
+import ProductSummary from './pages/Product/ProductSummary';
 
 const App = () => {
 
@@ -24,7 +25,7 @@ const App = () => {
           <Route path="/facility" element={<Facility />} />
           <Route path="/menuVarieties" element={<MenuVarieties />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/ProductList/ProductSummary" element={<Cart />} />
+          <Route path="/ProductList/ProductSummary" element={<ProductSummary />} />
           <Route path="/wishList" element={<WishList />} />
           <Route path="/trackOrder" element={<TrackOrder />} />
         </Routes>
