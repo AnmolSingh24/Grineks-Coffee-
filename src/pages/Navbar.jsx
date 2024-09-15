@@ -1,10 +1,12 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from "../assets/Logo.jpg";
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { HiDotsVertical } from "react-icons/hi";
 import { useCart } from '../context/CartContext';
+import { FaHeart } from "react-icons/fa";
+import { IoMdCheckbox } from "react-icons/io";
 
 const Navbar = () => {
     const { cartItems } = useCart();
@@ -59,16 +61,20 @@ const Navbar = () => {
                                     ref={dropdownRef}
                                     className='absolute top-12 right-0 bg-white shadow-lg rounded-lg w-[15rem] p-2'
                                 >
-                                    <button onClick={handleCloseDropDown} className='absolute top-2 right-2 text-gray-600'>x</button>
-                                    <div className='font-semibold'>
+                                    <button onClick={handleCloseDropDown} className='absolute top-2 right-2 text-yellow-800'>x</button>
+                                    <div className='font-semibold p-1'>
                                         <div className='mt-6 mb-2'>
                                             <Link to="/wishList" className='block text-yellow-800 hover:bg-yellow-200 py-2 px-4 rounded-md'>
-                                                WishList
+                                                <div className='flex justify-start items-center gap-4'>
+                                                    <FaHeart />WishList
+                                                </div>
                                             </Link>
                                         </div>
                                         <div>
                                             <Link to="/trackOrder" className='block text-yellow-800 hover:bg-yellow-200 py-2 px-4 rounded-md'>
-                                                Track Order
+                                                <div className='flex justify-start items-center gap-4'>
+                                                    <IoMdCheckbox className='w-5 h-5' />Track Order
+                                                </div>
                                             </Link>
                                         </div>
                                     </div>
