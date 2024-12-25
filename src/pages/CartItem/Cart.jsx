@@ -56,7 +56,7 @@ const Cart = () => {
     const calculateTotalAmount = () => {
         const totalAmount = cartItems.reduce((sum, item) => {
             const amt = item.type === 'coffee' ? item.selectedPrice?.amt : item.selectedPriceAmt?.price;
-            return sum += amt;
+            return sum += parseInt(amt);
         }, 0);
         const totalAmt = (totalAmount * quantity) - discount + deliveryCharges;
         return totalAmt;

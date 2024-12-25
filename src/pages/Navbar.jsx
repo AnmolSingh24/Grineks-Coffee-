@@ -26,7 +26,7 @@ const Navbar = () => {
     return (
         <div className='pb-4 lg:mb-35 shadow-sm'>
             <div className='flex flex-wrap'>
-                <div className='w-full p-2 flex justify-around items-center gap-20 fixed bg-white'>
+                <div className='w-full p-2 flex justify-around items-center gap-20 fixed bg-white z-50'>
                     <div className='w-16 h-16 ml-16'>
                         <Link to="/">
                             <img src={Logo} alt="Grineks-Logo" />
