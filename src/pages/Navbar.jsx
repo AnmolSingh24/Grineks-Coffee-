@@ -90,7 +90,7 @@ const Navbar = () => {
 
             {signInModal && (
                 <div className='fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50'>
-                    <div className='bg-white p-6 rounded-lg w-[20rem]'>
+                    <div className='bg-white p-6 rounded-lg w-[22rem]'>
                         <div className='relative'>
                             <button onClick={handleCloseModal} className='absolute top-2 right-2 text-gray-600'>
                                 x
@@ -114,9 +114,11 @@ const Navbar = () => {
                                 <label htmlFor='password' className='block text-sm font-semibold mb-1'>Password</label>
                                 <input type='password' id='password' className='w-full px-3 py-2 border border-gray-300 rounded' />
                             </div>
-                            <button type='submit' className='w-full bg-yellow-800 text-white py-2 rounded'>
+                            <button type='submit' className='w-full bg-yellow-800 hover:bg-yellow-700 text-white py-2 rounded'>
                                 Sign Up
                             </button>
+
+                            <p className='pt-3 text-gray-700'>Already a customer?<Link to='/' className='text-yellow-900 hover:text-yellow-700 font-semibold'> Login</Link></p>
                         </form>
                     </div>
                 </div>
