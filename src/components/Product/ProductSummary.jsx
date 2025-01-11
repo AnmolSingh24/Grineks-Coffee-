@@ -1,10 +1,9 @@
 import { useLocation } from 'react-router-dom';
-import Navbar from '../Navbar';
+import Navbar from '../../pages/Navbar';
 import { useEffect, useState } from 'react';
 
 const ProductSummary = () => {
 
-    console.log("Hey")
     const location = useLocation();
     const { type, coffee, selectedPrice, menu, selectedPriceAmt } = location.state || {};
     const [deliveryDay, setDeliveryDay] = useState('');
@@ -12,6 +11,7 @@ const ProductSummary = () => {
     const [deliveryCharges, setDeliveryCharges] = useState(40);
     const [amount, setAmount] = useState(0);
     const [quantity, setQuantity] = useState(1);
+    const [PaymentTypeModal, setPaymentTypeModal] = useState(false);
 
     useEffect(() => {
         const getDeliveryDay = () => {

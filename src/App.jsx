@@ -2,15 +2,15 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Facility from './pages/Facility';
-import MenuVarieties from './pages/Menu/MenuVarieties';
-import MenuList from './pages/Menu/MenuList';
-import ProductList from "./pages/Product/ProductList";
-import Cart from './pages/CartItem/Cart';
+import MenuVarieties from './components/Menu/MenuVarieties';
+import MenuList from './components/Menu/MenuList';
+import ProductList from "./components/Product/ProductList";
+import Cart from './components/CartItem/Cart';
 import './index.css';
 import { CartProvider } from './context/CartContext';
 import WishList from './WishList';
 import TrackOrder from './TrackOrder';
-import ProductSummary from './pages/Product/ProductSummary';
+import ProductSummary from './components/Product/ProductSummary';
 
 const App = () => {
 

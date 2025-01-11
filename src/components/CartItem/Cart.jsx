@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import EmptyCart from "../../assets/EmptyCart.png";
-import Navbar from "../Navbar";
+import EmptyCart from "../../assets/images/EmptyCart.png";
+import Navbar from "../../pages/Navbar";
 import { useCart } from '../../context/CartContext';
 
 const Cart = () => {

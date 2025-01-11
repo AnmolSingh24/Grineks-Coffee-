@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import Hero from './Hero';
-import Menu from '../pages/Menu/Menu';
-import Products from './Product/Products';
+import Menu from '../components/Menu/Menu';
+import Products from '../components/Product/Products';
 import Reviews from "./Reviews";
 import Footer from './Footer';
 

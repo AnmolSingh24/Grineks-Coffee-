@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { productItems } from "../../constants/data.js"
 import CoffeeProducts from "./CoffeeProducts.jsx"
-import Navbar from "../Navbar.jsx";
+import Navbar from "../../pages/Navbar";
 
 const ProductList = () => {
 

@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Logo from "../assets/Logo.jpg";
+import Logo from "../assets/images/Logo.jpg";
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { HiDotsVertical } from "react-icons/hi";
@@ -13,6 +13,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     const [dropDownModal, setDropDownModal] = useState(false);
     const [signInModal, setSignInModal] = useState(false);
+    const [LoginModal, setLoginModal] = useState(false);
     const dropdownRef = useRef(null);
 
     const handleCartClick = () => navigate('/cart');
@@ -22,6 +23,9 @@ const Navbar = () => {
 
     const handleSignInModal = () => setSignInModal(true);
     const handleCloseModal = () => setSignInModal(false);
+
+    const handleLoginModal = () => setLoginModal(true);
+    const handleLoginCloseModal = () => setLoginModal(false);
 
     return (
         <div className='pb-4 lg:mb-35 shadow-sm'>
@@ -70,13 +74,13 @@ const Navbar = () => {
                                                 </div>
                                             </Link>
                                         </div>
-                                        <div>
+                                        {/* <div>
                                             <Link to="/trackOrder" className='block text-yellow-800 hover:bg-yellow-200 py-2 px-4 rounded-md'>
                                                 <div className='flex justify-start items-center gap-4'>
                                                     <IoMdCheckbox className='w-5 h-5' />Track Order
                                                 </div>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             )}
@@ -118,10 +122,42 @@ const Navbar = () => {
                                 Sign Up
                             </button>
 
-                            <p className='pt-3 text-gray-700'>Already a customer?<Link to='/' className='text-yellow-900 hover:text-yellow-700 font-semibold'> Login</Link></p>
+                            <p className='pt-3 text-gray-700'>Already a customer?
+                                <Link onClick={handleLoginModal} className='text-yellow-900 hover:text-yellow-700 font-semibold'> Login</Link>
+                            </p>
                         </form>
                     </div>
                 </div>
+            )}
+
+            {LoginModal && (
+                <div className='fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50'>
+                <div className='bg-white p-6 rounded-lg w-[22rem]'>
+                    <div className='relative'>
+                        <button onClick={handleLoginCloseModal} className='absolute top-2 right-2 text-gray-600'>
+                            x
+                        </button>
+                        <h2 className='text-2xl font-bold mb-8'>Login</h2>
+                    </div>
+                    <form>
+                        <div className='mb-4'>
+                            <label htmlFor='username' className='block text-sm font-semibold mb-1'>Username</label>
+                            <input type='username' id='username' className='w-full px-3 py-2 border border-gray-300 rounded' />
+                        </div>
+                        <div className='mb-4'>
+                            <label htmlFor='password' className='block text-sm font-semibold mb-1'>Password</label>
+                            <input type='password' id='password' className='w-full px-3 py-2 border border-gray-300 rounded' />
+                        </div>
+                        <button type='submit' className='w-full bg-yellow-800 hover:bg-yellow-700 text-white py-2 rounded'>
+                            Login
+                        </button>
+
+                        <p className='pt-3 text-gray-700'>Don't have an account?
+                            <Link to='#' onClick={handleSignInModal} className='text-yellow-900 hover:text-yellow-700 font-semibold'> SignUp</Link>
+                        </p>
+                    </form>
+                </div>
+            </div>
             )}
         </div>
     );

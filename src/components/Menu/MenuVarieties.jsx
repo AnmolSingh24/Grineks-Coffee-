@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import Navbar from '../Navbar';
+import Navbar from '../../pages/Navbar';
 import MenuModal from './MenuModal';
 import { useState } from 'react';
 import { FaRegHeart } from "react-icons/fa6";
