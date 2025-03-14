@@ -15,7 +15,7 @@ router.get('/my-reservations', protect, async (req, res) => {
 });
 
 // Create reservation
-router.post('/', protect, async (req, res) => {
+router.post('/create-reservation', protect, async (req, res) => {
   try {
     const reservation = new Reservation({
       user: req.user._id,
@@ -29,7 +29,7 @@ router.post('/', protect, async (req, res) => {
 });
 
 // Update reservation
-router.put('/:id', protect, async (req, res) => {
+router.put('/:update-id', protect, async (req, res) => {
   try {
     const reservation = await Reservation.findOne({
       _id: req.params.id,
@@ -49,7 +49,7 @@ router.put('/:id', protect, async (req, res) => {
 });
 
 // Cancel reservation
-router.delete('/:id', protect, async (req, res) => {
+router.delete('/:reservation-id', protect, async (req, res) => {
   try {
     const reservation = await Reservation.findOneAndUpdate(
       { _id: req.params.id, user: req.user._id },
@@ -68,7 +68,7 @@ router.delete('/:id', protect, async (req, res) => {
 });
 
 // Get all reservations (staff/admin only)
-router.get('/', protect, authorize('staff', 'admin'), async (req, res) => {
+router.get('/all-reservation', protect, authorize('staff', 'admin'), async (req, res) => {
   try {
     const reservations = await Reservation.find()
       .populate('user', 'username email')

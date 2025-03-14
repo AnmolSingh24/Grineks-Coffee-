@@ -16,7 +16,7 @@ router.get('/my-orders', protect, async (req, res) => {
 });
 
 // Create order
-router.post('/', protect, async (req, res) => {
+router.post('/create-order', protect, async (req, res) => {
   try {
     const order = new Order({
       user: req.user._id,
@@ -30,7 +30,7 @@ router.post('/', protect, async (req, res) => {
 });
 
 // Update order status (staff/admin only)
-router.patch('/:id/status', protect, authorize('staff', 'admin'), async (req, res) => {
+router.patch('/:id/order-status', protect, authorize('staff', 'admin'), async (req, res) => {
   try {
     const order = await Order.findByIdAndUpdate(
       req.params.id,
@@ -47,7 +47,7 @@ router.patch('/:id/status', protect, authorize('staff', 'admin'), async (req, re
 });
 
 // Get all orders (staff/admin only)
-router.get('/', protect, authorize('staff', 'admin'), async (req, res) => {
+router.get('/all-orders', protect, authorize('staff', 'admin'), async (req, res) => {
   try {
     const orders = await Order.find()
       .populate('user', 'username email')

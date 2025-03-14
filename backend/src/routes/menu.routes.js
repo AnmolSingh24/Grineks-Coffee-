@@ -4,7 +4,7 @@ import MenuItem  from '../models/menu.model.js';
 import { protect, authorize }  from '../middleware/auth.middleware.js';
 
 // Get all menu items
-router.get('/', async (req, res) => {
+router.get('/user-menu', async (req, res) => {
   try {
     const menuItems = await MenuItem.find();
     res.json(menuItems);
@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
 });
 
 // Add menu item (admin only)
-router.post('/', protect, authorize('admin'), async (req, res) => {
+router.post('/admin-menu', protect, authorize('admin'), async (req, res) => {
   try {
     const menuItem = new MenuItem(req.body);
     await menuItem.save();
@@ -25,7 +25,7 @@ router.post('/', protect, authorize('admin'), async (req, res) => {
 });
 
 // Update menu item (admin only)
-router.put('/:id', protect, authorize('admin'), async (req, res) => {
+router.put('/:admin-id', protect, authorize('admin'), async (req, res) => {
   try {
     const menuItem = await MenuItem.findByIdAndUpdate(
       req.params.id,
@@ -42,7 +42,7 @@ router.put('/:id', protect, authorize('admin'), async (req, res) => {
 });
 
 // Delete menu item (admin only)
-router.delete('/:id', protect, authorize('admin'), async (req, res) => {
+router.delete('/:admin-id', protect, authorize('admin'), async (req, res) => {
   try {
     const menuItem = await MenuItem.findByIdAndDelete(req.params.id);
     if (!menuItem) {
