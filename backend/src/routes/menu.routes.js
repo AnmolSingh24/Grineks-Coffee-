@@ -13,6 +13,15 @@ router.get('/user-menu', async (req, res) => {
   }
 });
 
+router.get('/menu-varieties', async (req, res) => {
+  try {
+    const menuItems = await MenuItem.find();
+    res.json(menuItems);
+  } catch (err) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
 // Add menu item (admin only)
 router.post('/admin-menu', protect, authorize('admin'), async (req, res) => {
   try {
