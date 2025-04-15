@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImg from "../assets/images/HeroCoffeeImg.png"
+//import HeroImg from "../assets/images/HeroCoffeeImg.png"
 import { FiArrowRightCircle } from "react-icons/fi";
 import { HEROCONTENT } from '../constants/data.js';
 import { Link } from 'react-router-dom';
@@ -11,7 +11,7 @@ const Hero = () => {
                 <div className='w-full mt-4 flex items-center justify-center gap-10'>
                 
 
-                    <img src={HeroImg} alt="Coffee-Image" className='w-[48rem] h-[35rem] mt-28' />
+                    {/* <img src={HeroImg} alt="Coffee-Image" className='w-[48rem] h-[35rem] mt-28' /> */}
                     
                     <div className='w-[40rem] pr-10'>
                         {HEROCONTENT.map((content, index) => (

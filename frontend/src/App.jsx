@@ -8,6 +8,7 @@ import MenuVarieties from "./pages/Menu/MenuVarieties"
 import Cart from "./pages/CartItem/Cart"
 import ProductSummary from "./pages/Product/ProductSummary"
 import AdminPanel from "./pages/Admin/AdminPanel"
+import CheckMenu from "./pages/Admin/components/CheckMenu"
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         {/* <Route path="/wishList" element={<WishList />} />
         <Route path="/trackOrder" element={<TrackOrder />} /> */}
         <Route path="/admin" element={<AdminPanel />} />
+        <Route path="/menu" element={<CheckMenu />} />
       </Routes>
     </>
   )

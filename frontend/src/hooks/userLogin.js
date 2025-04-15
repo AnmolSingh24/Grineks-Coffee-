@@ -10,27 +10,29 @@ const UserLogin = () => {
 
         setLoading(true);
         try {
-            const storedToken = document.cookie
-                .split(";")
-                .find((cookie) => cookie.trim().startsWith("authToken="))
-                ?.split("=")[1];
+            // const storedToken = document.cookie
+            // .split(";")
+            // .find((cookie) => cookie.trim().startsWith("authToken="))
+            // ?.split("=")[1];
 
-            console.log("Token : ", storedToken);
+            //const storedToken = localStorage.getItem("token");     //22/03/2025
+
             const res = await fetch("/api/auth/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    Authorization: storedToken ? `Bearer ${storedToken}` : "",
+                    //Authorization: storedToken ? `Bearer ${storedToken}` : "",
                 },
                 body: JSON.stringify({ username, password }),
             });
 
             const data = await res.json();
-
+            console.log("hello Login", data)
+            localStorage.setItem("token", data.token);
             if (!res.ok) {
                 throw new Error(data.error || "Login failed");
             }
-            localStorage.setItem("login-user", JSON.stringify(data));
+            //localStorage.setItem("token", JSON.stringify(data));
             setAuthUser(data);
         } catch (err) {
             console.error("Login Error:", err.message);

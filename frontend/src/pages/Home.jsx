@@ -1,9 +1,8 @@
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 import Hero from './Hero';
-import Menu from '../components/Menu/Menu';
-import Products from '../components/Product/Products';
-import Reviews from "./Reviews";
-import Footer from './Footer';
+import Menu from '../pages/Menu/Menu';
+import Products from '../pages/Product/Products';
+//import Reviews from "./Reviews";
 
 const Home = () => {
   return (
@@ -12,8 +11,7 @@ const Home = () => {
       <Hero />
       <Menu />
       <Products />
-      <Reviews />
-      <Footer />
+      {/* <Reviews /> */}
     </div>
   )
 }
