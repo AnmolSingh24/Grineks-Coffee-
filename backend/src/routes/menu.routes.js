@@ -24,6 +24,19 @@ router.post('/admin-menu', protect, authorize('admin'), async (req, res) => {
   }
 });
 
+// Get a single menu item by ID
+router.get('/menu-by-id/:id', async (req, res) => {
+  try {
+    const menuItem = await MenuItem.findById(req.params.id);
+    if (!menuItem) {
+      return res.status(404).json({ message: 'Menu item not found' });
+    }
+    res.json(menuItem);
+  } catch (err) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
 // Update menu item (admin only)
 router.put('/:id', protect, authorize('admin'), async (req, res) => {
   try {
@@ -42,7 +55,7 @@ router.put('/:id', protect, authorize('admin'), async (req, res) => {
 });
 
 // Delete menu item (admin only)
-router.delete('/:admin-id', protect, authorize('admin'), async (req, res) => {
+router.delete('/:id', protect, authorize('admin'), async (req, res) => {
   try {
     const menuItem = await MenuItem.findByIdAndDelete(req.params.id);
     if (!menuItem) {
